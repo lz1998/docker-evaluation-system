@@ -1,0 +1,97 @@
+{
+    "status": "ok",
+    "datas": {
+        "lianjia": {
+            "lianjia_spider": {
+                "64cea4ba3cec11e9937b9061aedfe3a9": {
+                    "log_path": "C:\\Users\\87554\\logs\\lianjia\\lianjia_spider\\64cea4ba3cec11e9937b9061aedfe3a9.log",
+                    "json_path": "C:\\Users\\87554\\logs\\lianjia\\lianjia_spider\\64cea4ba3cec11e9937b9061aedfe3a9.json",
+                    "json_url": "http://127.0.0.1:6800/logs/lianjia/lianjia_spider/64cea4ba3cec11e9937b9061aedfe3a9.json",
+                    "size": 12349522,
+                    "position": 12349342,
+                    "status": "ok",
+                    "_head": 100,
+                    "pages": 40409,
+                    "items": 38890,
+                    "first_log_time": "2019-03-02 21:09:25",
+                    "latest_log_time": "2019-03-02 22:51:43",
+                    "elapsed": "1:42:18",
+                    "shutdown_reason": "N/A",
+                    "finish_reason": "N/A",
+                    "last_update_time": "2019-03-02 22:52:18"
+                },
+                "911e32823dc811e9b8d49061aedfe3a9": {
+                    "log_path": "C:\\Users\\87554\\logs\\lianjia\\lianjia_spider\\911e32823dc811e9b8d49061aedfe3a9.log",
+                    "json_path": "C:\\Users\\87554\\logs\\lianjia\\lianjia_spider\\911e32823dc811e9b8d49061aedfe3a9.json",
+                    "json_url": "http://127.0.0.1:6800/logs/lianjia/lianjia_spider/911e32823dc811e9b8d49061aedfe3a9.json",
+                    "size": 3077053,
+                    "position": 3076925,
+                    "status": "ok",
+                    "_head": 100,
+                    "pages": 10105,
+                    "items": 9682,
+                    "first_log_time": "2019-03-03 23:25:27",
+                    "latest_log_time": "2019-03-03 23:52:32",
+                    "elapsed": "0:27:05",
+                    "shutdown_reason": "N/A",
+                    "finish_reason": "N/A",
+                    "last_update_time": "2019-03-18 23:11:13"
+                },
+                "f1e95f3e493f11e9b6a19061aedfe3a9": {
+                    "log_path": "C:\\Users\\87554\\logs\\lianjia\\lianjia_spider\\f1e95f3e493f11e9b6a19061aedfe3a9.log",
+                    "json_path": "C:\\Users\\87554\\logs\\lianjia\\lianjia_spider\\f1e95f3e493f11e9b6a19061aedfe3a9.json",
+                    "json_url": "http://127.0.0.1:6800/logs/lianjia/lianjia_spider/f1e95f3e493f11e9b6a19061aedfe3a9.json",
+                    "size": 103861119,
+                    "position": 103861119,
+                    "status": "ok",
+                    "_head": 100,
+                    "pages": 66498,
+                    "items": 55373,
+                    "first_log_time": "2019-03-18 13:37:46",
+                    "latest_log_time": "2019-03-18 16:10:43",
+                    "elapsed": "2:32:57",
+                    "shutdown_reason": "N/A",
+                    "finish_reason": "finished",
+                    "last_update_time": "2019-03-18 23:12:04"
+                },
+                "4f284cdc499011e998a59061aedfe3a9": {
+                    "log_path": "C:\\Users\\87554\\logs\\lianjia\\lianjia_spider\\4f284cdc499011e998a59061aedfe3a9.log",
+                    "json_path": "C:\\Users\\87554\\logs\\lianjia\\lianjia_spider\\4f284cdc499011e998a59061aedfe3a9.json",
+                    "json_url": "http://127.0.0.1:6800/logs/lianjia/lianjia_spider/4f284cdc499011e998a59061aedfe3a9.json",
+                    "size": 100373,
+                    "position": 100189,
+                    "status": "ok",
+                    "_head": 100,
+                    "pages": 312,
+                    "items": 249,
+                    "first_log_time": "2019-03-18 23:13:00",
+                    "latest_log_time": "2019-03-18 23:14:06",
+                    "elapsed": "0:01:06",
+                    "shutdown_reason": "N/A",
+                    "finish_reason": "N/A",
+                    "last_update_time": "2019-03-18 23:14:06"
+                },
+                "88e1605a499011e9933e9061aedfe3a9": {
+                    "log_path": "C:\\Users\\87554\\logs\\lianjia\\lianjia_spider\\88e1605a499011e9933e9061aedfe3a9.log",
+                    "json_path": "C:\\Users\\87554\\logs\\lianjia\\lianjia_spider\\88e1605a499011e9933e9061aedfe3a9.json",
+                    "json_url": "http://127.0.0.1:6800/logs/lianjia/lianjia_spider/88e1605a499011e9933e9061aedfe3a9.json",
+                    "size": 39237,
+                    "position": 39109,
+                    "status": "ok",
+                    "_head": 100,
+                    "pages": 0,
+                    "items": 0,
+                    "first_log_time": "2019-03-18 23:14:41",
+                    "latest_log_time": "2019-03-18 23:15:06",
+                    "elapsed": "0:00:25",
+                    "shutdown_reason": "N/A",
+                    "finish_reason": "N/A",
+                    "last_update_time": "2019-03-18 23:15:06"
+                }
+            }
+        }
+    },
+    "logparser_version": "0.8.0",
+    "last_update_timestamp": 1552922106,
+    "last_update_time": "2019-03-18 23:15:06"
+}

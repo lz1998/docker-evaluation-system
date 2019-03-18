@@ -1,0 +1,948 @@
+2019-03-18 23:14:41 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: lianjia)
+2019-03-18 23:14:41 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.6 (v3.6.6:4cf1f54eb7, Jun 27 2018, 03:37:03) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2019-03-18 23:14:41 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'lianjia', 'LOG_FILE': 'logs\\lianjia\\lianjia_spider\\88e1605a499011e9933e9061aedfe3a9.log', 'NEWSPIDER_MODULE': 'lianjia.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['lianjia.spiders']}
+2019-03-18 23:14:41 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-03-18 23:14:41 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-18 23:14:41 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-18 23:14:41 [scrapy.middleware] INFO: Enabled item pipelines:
+['lianjia.pipelines.LianjiaPipeline']
+2019-03-18 23:14:41 [scrapy.core.engine] INFO: Spider opened
+2019-03-18 23:14:41 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-18 23:14:41 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2019-03-18 23:14:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://sh.lianjia.com/robots.txt> from <GET http://sh.lianjia.com/robots.txt>
+2019-03-18 23:14:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/robots.txt> (referer: None)
+2019-03-18 23:14:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://sh.lianjia.com/ershoufang/> from <GET http://sh.lianjia.com/ershoufang/>
+2019-03-18 23:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/> (referer: None)
+2019-03-18 23:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/pudong/> (referer: https://sh.lianjia.com/ershoufang/)
+2019-03-18 23:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/zhabei/> (referer: https://sh.lianjia.com/ershoufang/)
+2019-03-18 23:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/huangpu/> (referer: https://sh.lianjia.com/ershoufang/)
+2019-03-18 23:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/jingan/> (referer: https://sh.lianjia.com/ershoufang/)
+2019-03-18 23:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/fengxian/> (referer: https://sh.lianjia.com/ershoufang/)
+2019-03-18 23:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/hongkou/> (referer: https://sh.lianjia.com/ershoufang/)
+2019-03-18 23:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/qingpu/> (referer: https://sh.lianjia.com/ershoufang/)
+2019-03-18 23:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/chongming/> (referer: https://sh.lianjia.com/ershoufang/)
+2019-03-18 23:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/shanghaizhoubian/> (referer: https://sh.lianjia.com/ershoufang/)
+2019-03-18 23:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/jinshan/> (referer: https://sh.lianjia.com/ershoufang/)
+2019-03-18 23:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/songjiang/> (referer: https://sh.lianjia.com/ershoufang/)
+2019-03-18 23:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/jiading/> (referer: https://sh.lianjia.com/ershoufang/)
+2019-03-18 23:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/changning/> (referer: https://sh.lianjia.com/ershoufang/)
+2019-03-18 23:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/xuhui/> (referer: https://sh.lianjia.com/ershoufang/)
+2019-03-18 23:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/baoshan/> (referer: https://sh.lianjia.com/ershoufang/)
+2019-03-18 23:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/minhang/> (referer: https://sh.lianjia.com/ershoufang/)
+2019-03-18 23:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/putuo/> (referer: https://sh.lianjia.com/ershoufang/)
+2019-03-18 23:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/zhabeigongyuan/> (referer: https://sh.lianjia.com/ershoufang/zhabei/)
+2019-03-18 23:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/yangpu/> (referer: https://sh.lianjia.com/ershoufang/)
+2019-03-18 23:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/yangcheng/> (referer: https://sh.lianjia.com/ershoufang/zhabei/)
+2019-03-18 23:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/nanjingxilu/> (referer: https://sh.lianjia.com/ershoufang/jingan/)
+2019-03-18 23:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/caojiadu/> (referer: https://sh.lianjia.com/ershoufang/jingan/)
+2019-03-18 23:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/xintiandi/> (referer: https://sh.lianjia.com/ershoufang/huangpu/)
+2019-03-18 23:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/yuyuan/> (referer: https://sh.lianjia.com/ershoufang/huangpu/)
+2019-03-18 23:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/jiangninglu/> (referer: https://sh.lianjia.com/ershoufang/jingan/)
+2019-03-18 23:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/jingansi/> (referer: https://sh.lianjia.com/ershoufang/jingan/)
+2019-03-18 23:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/baozhen/> (referer: https://sh.lianjia.com/ershoufang/chongming/)
+2019-03-18 23:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/fengxianjinhui/> (referer: https://sh.lianjia.com/ershoufang/fengxian/)
+2019-03-18 23:14:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/beixinjing/> (referer: https://sh.lianjia.com/ershoufang/changning/)
+2019-03-18 23:14:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/xuxing/> (referer: https://sh.lianjia.com/ershoufang/jiading/)
+2019-03-18 23:14:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/waigang/> (referer: https://sh.lianjia.com/ershoufang/jiading/)
+2019-03-18 23:14:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/zhongshangongyuan/> (referer: https://sh.lianjia.com/ershoufang/changning/)
+2019-03-18 23:14:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/shangda/> (referer: https://sh.lianjia.com/ershoufang/jiading/)
+2019-03-18 23:14:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/xinchenglu1/> (referer: https://sh.lianjia.com/ershoufang/jiading/)
+2019-03-18 23:14:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/changqiao/> (referer: https://sh.lianjia.com/ershoufang/xuhui/)
+2019-03-18 23:14:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/zhiwuyuan/> (referer: https://sh.lianjia.com/ershoufang/xuhui/)
+2019-03-18 23:14:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/yangcheng/pg1/> (referer: https://sh.lianjia.com/ershoufang/yangcheng/)
+2019-03-18 23:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/zhongyuan1/> (referer: https://sh.lianjia.com/ershoufang/yangpu/)
+2019-03-18 23:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/yangcheng/pg4/> (referer: https://sh.lianjia.com/ershoufang/yangcheng/)
+2019-03-18 23:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/yangcheng/pg6/> (referer: https://sh.lianjia.com/ershoufang/yangcheng/)
+2019-03-18 23:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/yangcheng/pg3/> (referer: https://sh.lianjia.com/ershoufang/yangcheng/)
+2019-03-18 23:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/yangcheng/pg5/> (referer: https://sh.lianjia.com/ershoufang/yangcheng/)
+2019-03-18 23:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/yangcheng/pg2/> (referer: https://sh.lianjia.com/ershoufang/yangcheng/)
+2019-03-18 23:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/zhoujiazuilu/> (referer: https://sh.lianjia.com/ershoufang/yangpu/)
+2019-03-18 23:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/fengxianjinhui/pg1/> (referer: https://sh.lianjia.com/ershoufang/fengxianjinhui/)
+2019-03-18 23:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/jingansi/pg6/> (referer: https://sh.lianjia.com/ershoufang/jingansi/)
+2019-03-18 23:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/fengxianjinhui/pg3/> (referer: https://sh.lianjia.com/ershoufang/fengxianjinhui/)
+2019-03-18 23:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/jingansi/pg2/> (referer: https://sh.lianjia.com/ershoufang/jingansi/)
+2019-03-18 23:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/jingansi/pg5/> (referer: https://sh.lianjia.com/ershoufang/jingansi/)
+2019-03-18 23:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/jingansi/pg3/> (referer: https://sh.lianjia.com/ershoufang/jingansi/)
+2019-03-18 23:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/jingansi/pg4/> (referer: https://sh.lianjia.com/ershoufang/jingansi/)
+2019-03-18 23:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/fengxianjinhui/pg2/> (referer: https://sh.lianjia.com/ershoufang/fengxianjinhui/)
+2019-03-18 23:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/zhiwuyuan/pg5/> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/)
+2019-03-18 23:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/changqiao/pg5/> (referer: https://sh.lianjia.com/ershoufang/changqiao/)
+2019-03-18 23:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/changqiao/pg3/> (referer: https://sh.lianjia.com/ershoufang/changqiao/)
+2019-03-18 23:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/changqiao/pg4/> (referer: https://sh.lianjia.com/ershoufang/changqiao/)
+2019-03-18 23:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/)
+2019-03-18 23:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/)
+2019-03-18 23:14:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/)
+2019-03-18 23:14:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100028474.html> (referer: https://sh.lianjia.com/ershoufang/yangcheng/pg1/)
+2019-03-18 23:14:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/)
+2019-03-18 23:14:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/)
+2019-03-18 23:14:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/)
+2019-03-18 23:14:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100028474.html>
+None
+2019-03-18 23:14:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/)
+2019-03-18 23:14:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/)
+2019-03-18 23:14:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/)
+2019-03-18 23:14:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100741686.html> (referer: https://sh.lianjia.com/ershoufang/fengxianjinhui/pg1/)
+2019-03-18 23:14:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100741686.html>
+None
+2019-03-18 23:14:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101087703.html> (referer: https://sh.lianjia.com/ershoufang/fengxianjinhui/pg2/)
+2019-03-18 23:14:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101110973.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg5/)
+2019-03-18 23:14:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100739698.html> (referer: https://sh.lianjia.com/ershoufang/fengxianjinhui/pg1/)
+2019-03-18 23:14:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100743384.html> (referer: https://sh.lianjia.com/ershoufang/fengxianjinhui/pg2/)
+2019-03-18 23:14:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100997363.html> (referer: https://sh.lianjia.com/ershoufang/fengxianjinhui/pg2/)
+2019-03-18 23:14:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100528166.html> (referer: https://sh.lianjia.com/ershoufang/fengxianjinhui/pg2/)
+2019-03-18 23:14:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100996071.html> (referer: https://sh.lianjia.com/ershoufang/fengxianjinhui/pg2/)
+2019-03-18 23:14:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101087703.html>
+None
+2019-03-18 23:14:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100754531.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg5/)
+2019-03-18 23:14:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101110973.html>
+None
+2019-03-18 23:14:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100739698.html>
+None
+2019-03-18 23:14:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100743384.html>
+None
+2019-03-18 23:14:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100997363.html>
+None
+2019-03-18 23:14:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100528166.html>
+None
+2019-03-18 23:14:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100996071.html>
+None
+2019-03-18 23:14:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100754531.html>
+None
+2019-03-18 23:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002214633.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:14:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002214633.html>
+None
+2019-03-18 23:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100446256.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:14:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100446256.html>
+None
+2019-03-18 23:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101072270.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100567171.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100367549.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100658403.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107000641503.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100894347.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101072270.html>
+None
+2019-03-18 23:14:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100843706.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100567171.html>
+None
+2019-03-18 23:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100367549.html>
+None
+2019-03-18 23:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100658403.html>
+None
+2019-03-18 23:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107000641503.html>
+None
+2019-03-18 23:14:53 [py.warnings] WARNING: C:\Users\87554\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py:170: Warning: (1265, "Data truncated for column 'id' at row 1")
+  result = self._query(query)
+
+2019-03-18 23:14:53 [py.warnings] WARNING: C:\Users\87554\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py:170: Warning: (1366, "Incorrect integer value: '' for column 'floor' at row 1")
+  result = self._query(query)
+
+2019-03-18 23:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100894347.html>
+None
+2019-03-18 23:14:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100726560.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100843706.html>
+None
+2019-03-18 23:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100726560.html>
+None
+2019-03-18 23:14:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100728049.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:14:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100477479.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:14:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101110323.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:14:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100716879.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:14:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100666846.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:14:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100898758.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:14:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100728049.html>
+None
+2019-03-18 23:14:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100477479.html>
+None
+2019-03-18 23:14:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100663022.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:14:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101121753.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:14:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101110323.html>
+None
+2019-03-18 23:14:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100716879.html>
+None
+2019-03-18 23:14:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100898758.html>
+None
+2019-03-18 23:14:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100666846.html>
+None
+2019-03-18 23:14:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100663022.html>
+None
+2019-03-18 23:14:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101121753.html>
+None
+2019-03-18 23:14:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100238863.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:14:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100806597.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:14:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100230843.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:14:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100446212.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:14:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100338075.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:14:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100238863.html>
+None
+2019-03-18 23:14:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100645999.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:14:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100296188.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:14:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107001629215.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:14:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100806597.html>
+None
+2019-03-18 23:14:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100230843.html>
+None
+2019-03-18 23:14:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100446212.html>
+None
+2019-03-18 23:14:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100338075.html>
+None
+2019-03-18 23:14:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100645999.html>
+None
+2019-03-18 23:14:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100296188.html>
+None
+2019-03-18 23:14:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107001629215.html>
+None
+2019-03-18 23:14:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100257760.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:14:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100257760.html>
+None
+2019-03-18 23:14:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100231344.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:14:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100999237.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:14:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100083135.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:14:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100665256.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:14:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100709755.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:14:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100413991.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:14:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100231344.html>
+None
+2019-03-18 23:14:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100261719.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:14:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100999237.html>
+None
+2019-03-18 23:14:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100083135.html>
+None
+2019-03-18 23:14:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100665256.html>
+None
+2019-03-18 23:14:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100709755.html>
+None
+2019-03-18 23:14:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100413991.html>
+None
+2019-03-18 23:14:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100843509.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:14:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100261719.html>
+None
+2019-03-18 23:14:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100843509.html>
+None
+2019-03-18 23:14:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100569172.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:14:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100886339.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:15:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100569172.html>
+None
+2019-03-18 23:15:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100317887.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:15:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107001160077.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:15:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100161423.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:15:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002316347.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:15:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002061445.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:15:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100412880.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:15:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100886339.html>
+None
+2019-03-18 23:15:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100317887.html>
+None
+2019-03-18 23:15:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107001160077.html>
+None
+2019-03-18 23:15:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100161423.html>
+None
+2019-03-18 23:15:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002061445.html>
+None
+2019-03-18 23:15:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002316347.html>
+None
+2019-03-18 23:15:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100412880.html>
+None
+2019-03-18 23:15:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100869055.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:15:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002118335.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:15:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100869055.html>
+None
+2019-03-18 23:15:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002118335.html>
+None
+2019-03-18 23:15:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100090171.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107000663427.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100715149.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100813527.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100834881.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100739620.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:15:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100090171.html>
+None
+2019-03-18 23:15:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107000663427.html>
+None
+2019-03-18 23:15:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100715149.html>
+None
+2019-03-18 23:15:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100813527.html>
+None
+2019-03-18 23:15:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100834881.html>
+None
+2019-03-18 23:15:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100739620.html>
+None
+2019-03-18 23:15:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100722763.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100561538.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100722763.html>
+None
+2019-03-18 23:15:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100561538.html>
+None
+2019-03-18 23:15:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002074455.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002114547.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002255297.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100211675.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100055531.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002074455.html>
+None
+2019-03-18 23:15:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100304672.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100972625.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100266734.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002114547.html>
+None
+2019-03-18 23:15:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002255297.html>
+None
+2019-03-18 23:15:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100211675.html>
+None
+2019-03-18 23:15:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100055531.html>
+None
+2019-03-18 23:15:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100304672.html>
+None
+2019-03-18 23:15:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100972625.html>
+None
+2019-03-18 23:15:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100266734.html>
+None
+2019-03-18 23:15:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100311467.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100730808.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101094245.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107001310135.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107000126537.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100238252.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100311467.html>
+None
+2019-03-18 23:15:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100281347.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100608710.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100730808.html>
+None
+2019-03-18 23:15:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101094245.html>
+None
+2019-03-18 23:15:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107001310135.html>
+None
+2019-03-18 23:15:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107000126537.html>
+None
+2019-03-18 23:15:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100238252.html>
+None
+2019-03-18 23:15:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100281347.html>
+None
+2019-03-18 23:15:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100608710.html>
+None
+2019-03-18 23:15:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002250317.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100428367.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101027862.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002250317.html>
+None
+2019-03-18 23:15:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100381345.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100615921.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101066873.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100428367.html>
+None
+2019-03-18 23:15:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100509795.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100078253.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101027862.html>
+None
+2019-03-18 23:15:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100381345.html>
+None
+2019-03-18 23:15:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100615921.html>
+None
+2019-03-18 23:15:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101066873.html>
+None
+2019-03-18 23:15:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100509795.html>
+None
+2019-03-18 23:15:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100078253.html>
+None
+2019-03-18 23:15:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100727992.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100457882.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100727992.html>
+None
+2019-03-18 23:15:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100457882.html>
+None
+2019-03-18 23:15:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100969415.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100495604.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100980546.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100969415.html>
+None
+2019-03-18 23:15:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101012679.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100987176.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100573533.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100495604.html>
+None
+2019-03-18 23:15:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100980546.html>
+None
+2019-03-18 23:15:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100973172.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100972355.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101012679.html>
+None
+2019-03-18 23:15:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100987176.html>
+None
+2019-03-18 23:15:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100573533.html>
+None
+2019-03-18 23:15:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100973172.html>
+None
+2019-03-18 23:15:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100972355.html>
+None
+2019-03-18 23:15:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100955102.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100955102.html>
+None
+2019-03-18 23:15:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100906461.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100906461.html>
+None
+2019-03-18 23:15:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100813245.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100768151.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100461551.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100654440.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100806675.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100883368.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100813245.html>
+None
+2019-03-18 23:15:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100768151.html>
+None
+2019-03-18 23:15:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100461551.html>
+None
+2019-03-18 23:15:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100654440.html>
+None
+2019-03-18 23:15:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100806675.html>
+None
+2019-03-18 23:15:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100883368.html>
+None
+2019-03-18 23:15:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100375815.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100231637.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100375815.html>
+None
+2019-03-18 23:15:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100231637.html>
+None
+2019-03-18 23:15:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002270441.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002225563.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002270441.html>
+None
+2019-03-18 23:15:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100355835.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107001914419.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002225563.html>
+None
+2019-03-18 23:15:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100034259.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100435375.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100355835.html>
+None
+2019-03-18 23:15:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107001914419.html>
+None
+2019-03-18 23:15:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100060827.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100034259.html>
+None
+2019-03-18 23:15:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100435375.html>
+None
+2019-03-18 23:15:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100411028.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100060827.html>
+None
+2019-03-18 23:15:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107000322919.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100411028.html>
+None
+2019-03-18 23:15:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100369147.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg14/)
+2019-03-18 23:15:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107000322919.html>
+None
+2019-03-18 23:15:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100369147.html>
+None
+2019-03-18 23:15:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101128970.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100288243.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg13/)
+2019-03-18 23:15:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101123569.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100459656.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100731250.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100793744.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101128970.html>
+None
+2019-03-18 23:15:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100288243.html>
+None
+2019-03-18 23:15:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101123569.html>
+None
+2019-03-18 23:15:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100477289.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100825373.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100459656.html>
+None
+2019-03-18 23:15:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100731250.html>
+None
+2019-03-18 23:15:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100793744.html>
+None
+2019-03-18 23:15:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100477289.html>
+None
+2019-03-18 23:15:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100825373.html>
+None
+2019-03-18 23:15:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101110570.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101053177.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002102407.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002054467.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101110570.html>
+None
+2019-03-18 23:15:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002172095.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100284524.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg11/)
+2019-03-18 23:15:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100444145.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100570777.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101053177.html>
+None
+2019-03-18 23:15:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002102407.html>
+None
+2019-03-18 23:15:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002054467.html>
+None
+2019-03-18 23:15:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002172095.html>
+None
+2019-03-18 23:15:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100284524.html>
+None
+2019-03-18 23:15:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100444145.html>
+None
+2019-03-18 23:15:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100570777.html>
+None
+2019-03-18 23:15:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107001637363.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107001637363.html>
+None
+2019-03-18 23:15:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107001391209.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107001458415.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100389581.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107001486849.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100356857.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107001391209.html>
+None
+2019-03-18 23:15:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107000581531.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100220864.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107001458415.html>
+None
+2019-03-18 23:15:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100389581.html>
+None
+2019-03-18 23:15:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107001486849.html>
+None
+2019-03-18 23:15:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100356857.html>
+None
+2019-03-18 23:15:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100401165.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107000581531.html>
+None
+2019-03-18 23:15:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100220864.html>
+None
+2019-03-18 23:15:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100401165.html>
+None
+2019-03-18 23:15:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101073221.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101100563.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101110089.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002285323.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101131854.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101087852.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101130265.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101073221.html>
+None
+2019-03-18 23:15:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101100563.html>
+None
+2019-03-18 23:15:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100906154.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg12/)
+2019-03-18 23:15:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101110089.html>
+None
+2019-03-18 23:15:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002285323.html>
+None
+2019-03-18 23:15:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101131854.html>
+None
+2019-03-18 23:15:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101087852.html>
+None
+2019-03-18 23:15:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101130265.html>
+None
+2019-03-18 23:15:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100906154.html>
+None
+2019-03-18 23:15:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101116184.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101054055.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100854493.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100995851.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100584976.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101128490.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100991125.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100586738.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101116184.html>
+None
+2019-03-18 23:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101054055.html>
+None
+2019-03-18 23:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100854493.html>
+None
+2019-03-18 23:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100995851.html>
+None
+2019-03-18 23:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100584976.html>
+None
+2019-03-18 23:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101128490.html>
+None
+2019-03-18 23:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100991125.html>
+None
+2019-03-18 23:15:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100586738.html>
+None
+2019-03-18 23:15:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101069175.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107000758757.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100611517.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100138515.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100737464.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100396966.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100606018.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100744124.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101069175.html>
+None
+2019-03-18 23:15:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107000758757.html>
+None
+2019-03-18 23:15:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100611517.html>
+None
+2019-03-18 23:15:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100138515.html>
+None
+2019-03-18 23:15:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100737464.html>
+None
+2019-03-18 23:15:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100396966.html>
+None
+2019-03-18 23:15:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100606018.html>
+None
+2019-03-18 23:15:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100744124.html>
+None
+2019-03-18 23:15:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100919470.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101103651.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100919470.html>
+None
+2019-03-18 23:15:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101092342.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107001537231.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101092762.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100873309.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100270808.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100582126.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101103651.html>
+None
+2019-03-18 23:15:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101092342.html>
+None
+2019-03-18 23:15:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107001537231.html>
+None
+2019-03-18 23:15:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101092762.html>
+None
+2019-03-18 23:15:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100873309.html>
+None
+2019-03-18 23:15:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100270808.html>
+None
+2019-03-18 23:15:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100582126.html>
+None
+2019-03-18 23:15:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002268573.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002268573.html>
+None
+2019-03-18 23:15:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101011319.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101011319.html>
+None
+2019-03-18 23:15:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100658378.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101128130.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002104453.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100690195.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100768747.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101088318.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100658378.html>
+None
+2019-03-18 23:15:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002172905.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101128130.html>
+None
+2019-03-18 23:15:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100717509.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002104453.html>
+None
+2019-03-18 23:15:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100690195.html>
+None
+2019-03-18 23:15:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100768747.html>
+None
+2019-03-18 23:15:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101088318.html>
+None
+2019-03-18 23:15:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002172905.html>
+None
+2019-03-18 23:15:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100717509.html>
+None
+2019-03-18 23:15:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101082922.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100648986.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100788554.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100216561.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100178728.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100785809.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100523687.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg16/)
+2019-03-18 23:15:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100065592.html> (referer: https://sh.lianjia.com/ershoufang/zhoujiazuilu/pg15/)
+2019-03-18 23:15:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101082922.html>
+None
+2019-03-18 23:15:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100648986.html>
+None
+2019-03-18 23:15:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100788554.html>
+None
+2019-03-18 23:15:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100216561.html>
+None
+2019-03-18 23:15:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100178728.html>
+None
+2019-03-18 23:15:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100785809.html>
+None
+2019-03-18 23:15:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100523687.html>
+None
+2019-03-18 23:15:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100065592.html>
+None
+2019-03-18 23:15:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107001347917.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100132651.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107001347917.html>
+None
+2019-03-18 23:15:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101006810.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100839642.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002179229.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100132651.html>
+None
+2019-03-18 23:15:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002047101.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100989080.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002127439.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101006810.html>
+None
+2019-03-18 23:15:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100839642.html>
+None
+2019-03-18 23:15:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002179229.html>
+None
+2019-03-18 23:15:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002047101.html>
+None
+2019-03-18 23:15:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100989080.html>
+None
+2019-03-18 23:15:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002127439.html>
+None
+2019-03-18 23:15:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100244612.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100244612.html>
+None
+2019-03-18 23:15:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100984970.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100767146.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100652588.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100984970.html>
+None
+2019-03-18 23:15:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100738510.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100822061.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100712670.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100590050.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100905876.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100767146.html>
+None
+2019-03-18 23:15:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100652588.html>
+None
+2019-03-18 23:15:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100738510.html>
+None
+2019-03-18 23:15:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100822061.html>
+None
+2019-03-18 23:15:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100712670.html>
+None
+2019-03-18 23:15:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100590050.html>
+None
+2019-03-18 23:15:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100905876.html>
+None
+2019-03-18 23:15:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101001781.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101001781.html>
+None
+2019-03-18 23:15:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100301367.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100771899.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101044386.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100692894.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100618301.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100975102.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100301367.html>
+None
+2019-03-18 23:15:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100771899.html>
+None
+2019-03-18 23:15:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100802338.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101044386.html>
+None
+2019-03-18 23:15:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100692894.html>
+None
+2019-03-18 23:15:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100618301.html>
+None
+2019-03-18 23:15:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100975102.html>
+None
+2019-03-18 23:15:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100666775.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100802338.html>
+None
+2019-03-18 23:15:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100666775.html>
+None
+2019-03-18 23:15:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100696353.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100837504.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100837132.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101043321.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100696353.html>
+None
+2019-03-18 23:15:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100325312.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100920602.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100837504.html>
+None
+2019-03-18 23:15:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100624206.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100801178.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100837132.html>
+None
+2019-03-18 23:15:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101043321.html>
+None
+2019-03-18 23:15:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100325312.html>
+None
+2019-03-18 23:15:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100920602.html>
+None
+2019-03-18 23:15:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100624206.html>
+None
+2019-03-18 23:15:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100801178.html>
+None
+2019-03-18 23:15:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100544300.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101004540.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100200754.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101083908.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100635122.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100561473.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100817187.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100888061.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100544300.html>
+None
+2019-03-18 23:15:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101004540.html>
+None
+2019-03-18 23:15:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100200754.html>
+None
+2019-03-18 23:15:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100635122.html>
+None
+2019-03-18 23:15:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101083908.html>
+None
+2019-03-18 23:15:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100561473.html>
+None
+2019-03-18 23:15:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100817187.html>
+None
+2019-03-18 23:15:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100888061.html>
+None
+2019-03-18 23:15:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100792075.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100629713.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100872185.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100782586.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100960419.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100692988.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107002087337.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100792075.html>
+None
+2019-03-18 23:15:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100932255.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100629713.html>
+None
+2019-03-18 23:15:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100872185.html>
+None
+2019-03-18 23:15:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100782586.html>
+None
+2019-03-18 23:15:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100960419.html>
+None
+2019-03-18 23:15:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107002087337.html>
+None
+2019-03-18 23:15:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100692988.html>
+None
+2019-03-18 23:15:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100932255.html>
+None
+2019-03-18 23:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101088471.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100707484.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100089483.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100864439.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101088471.html>
+None
+2019-03-18 23:15:41 [scrapy.extensions.logstats] INFO: Crawled 313 pages (at 313 pages/min), scraped 243 items (at 243 items/min)
+2019-03-18 23:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100622228.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg3/)
+2019-03-18 23:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100720026.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100751168.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100527635.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg4/)
+2019-03-18 23:15:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100707484.html>
+None
+2019-03-18 23:15:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100089483.html>
+None
+2019-03-18 23:15:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100864439.html>
+None
+2019-03-18 23:15:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100622228.html>
+None
+2019-03-18 23:15:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100720026.html>
+None
+2019-03-18 23:15:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100751168.html>
+None
+2019-03-18 23:15:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100527635.html>
+None
+2019-03-18 23:15:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100292764.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100292764.html>
+None
+2019-03-18 23:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100514473.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100325361.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100514473.html>
+None
+2019-03-18 23:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100783536.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100325361.html>
+None
+2019-03-18 23:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100751598.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101079268.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101086173.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100855058.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100783536.html>
+None
+2019-03-18 23:15:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100751598.html>
+None
+2019-03-18 23:15:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101079268.html>
+None
+2019-03-18 23:15:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100855058.html>
+None
+2019-03-18 23:15:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101086173.html>
+None
+2019-03-18 23:15:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100730379.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100670271.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100730379.html>
+None
+2019-03-18 23:15:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100670271.html>
+None
+2019-03-18 23:15:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107001495043.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107001495043.html>
+None
+2019-03-18 23:15:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107001719735.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100771088.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101042329.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107001719735.html>
+None
+2019-03-18 23:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100946278.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100771088.html>
+None
+2019-03-18 23:15:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101042329.html>
+None
+2019-03-18 23:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101121807.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100246603.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100466828.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100798555.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100946278.html>
+None
+2019-03-18 23:15:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101121807.html>
+None
+2019-03-18 23:15:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100246603.html>
+None
+2019-03-18 23:15:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100466828.html>
+None
+2019-03-18 23:15:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100798555.html>
+None
+2019-03-18 23:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100947212.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100947212.html>
+None
+2019-03-18 23:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100695351.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100695351.html>
+None
+2019-03-18 23:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100608225.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100663265.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101051472.html> (referer: https://sh.lianjia.com/ershoufang/zhiwuyuan/pg2/)
+2019-03-18 23:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100296609.html> (referer: https://sh.lianjia.com/ershoufang/changqiao/pg4/)
+2019-03-18 23:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101086470.html> (referer: https://sh.lianjia.com/ershoufang/changqiao/pg4/)
+2019-03-18 23:15:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100608225.html>
+None
+2019-03-18 23:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100879255.html> (referer: https://sh.lianjia.com/ershoufang/changqiao/pg4/)
+2019-03-18 23:15:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100663265.html>
+None
+2019-03-18 23:15:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101051472.html>
+None
+2019-03-18 23:15:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100296609.html>
+None
+2019-03-18 23:15:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107101086470.html>
+None
+2019-03-18 23:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100113665.html> (referer: https://sh.lianjia.com/ershoufang/changqiao/pg4/)
+2019-03-18 23:15:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100879255.html>
+None
+2019-03-18 23:15:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100113665.html>
+None
+2019-03-18 23:15:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100377430.html> (referer: https://sh.lianjia.com/ershoufang/changqiao/pg4/)
+2019-03-18 23:15:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sh.lianjia.com/ershoufang/107100377430.html>
+None
+2019-03-18 23:15:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107101022488.html> (referer: https://sh.lianjia.com/ershoufang/changqiao/pg4/)
+2019-03-18 23:15:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100583661.html> (referer: https://sh.lianjia.com/ershoufang/changqiao/pg4/)
+2019-03-18 23:15:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100136142.html> (referer: https://sh.lianjia.com/ershoufang/changqiao/pg4/)
+2019-03-18 23:15:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sh.lianjia.com/ershoufang/107100046119.html> (referer: https://sh.lianjia.com/ershoufang/changqiao/pg4/)
