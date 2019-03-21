@@ -33,5 +33,8 @@ ADD https://docker-evaluation-system.oss-cn-shanghai.aliyuncs.com/YGT.zip /YGT.z
 RUN unzip -d /evaluation-system/evaluate /YGT.zip
 #解压模型数据
 
-#启动初始命令
+RUN chmod +x /entrypoint.sh
+#加权限
+
 ENTRYPOINT ["./entrypoint.sh"]
+#启动初始命令
