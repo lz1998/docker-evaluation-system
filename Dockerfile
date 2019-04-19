@@ -21,6 +21,9 @@ RUN sed -i "s/SCRAPYD_LOGS_DIR = ''/SCRAPYD_LOGS_DIR='\/logs'/" /usr/local/lib/p
 EXPOSE 5050
 #开放5050端口
 
+EXPOSE 6800
+#开放6800端口
+
 ADD logs /logs
 #放入logs，让logparser正常运行
 
