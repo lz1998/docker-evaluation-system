@@ -6,10 +6,10 @@
 
 ``` bash
 # build docker image named eva
-docker build -t=eva:v1.0 .
+docker build -t=eva:1.0 .
 
 # create a container
-docker create -p 5050:5050 eva:v1.0
+docker create -p 5050:5050 eva:1.0
 
 # consult the container's id
 docker ps -a
