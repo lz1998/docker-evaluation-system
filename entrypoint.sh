@@ -1,6 +1,8 @@
 #!/bin/bash
 nohup scrapyd &
+sleep 5s
 nohup logparser &
+sleep 5s
 cd lianjia
 scrapyd-deploy lianjia -p lianjia
 cd ..
